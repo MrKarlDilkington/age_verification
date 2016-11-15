@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btAgeVerification">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+        <field name="fID" type="I">
+            <unsigned />
+            <default value="0" />
+        </field>
+        <field name="content" type="X2"></field>
+        <field name="minimumAge" type="I"></field>
+        <field name="cookieExpiration" type="I"></field>
+        <field name="formImageWidth" type="I"></field>
+        <field name="extraTextWidth" type="I"></field>
+        <field name="ageRedirectPage" type="X"></field>
+        <field name="overlayBackgroundColor" type="C"></field>
+        <field name="formTextColor" type="C"></field>
+        <field name="validateTextColor" type="C"></field>
+        <field name="extraTextLinkColor" type="C"></field>
+        <field name="extraTextHoverColor" type="C"></field>
+        <field name="submitBorderColor" type="C"></field>
+        <field name="submitBackgroundColor" type="C"></field>
+        <field name="submitTextColor" type="C"></field>
+        <field name="submitTextHoverColor" type="C"></field>
+        <field name="submitBackgroundHoverColor" type="C"></field>
+        <field name="submitBackgroundActiveColor" type="C"></field>
+        <field name="requestTextFontSize" type="I"></field>
+        <field name="validateTextFontSize" type="I"></field>
+        <field name="inputTextFontSize" type="I"></field>
+        <field name="submitTextFontSize" type="I"></field>
+        <field name="labelTextFontSize" type="I"></field>
+        <field name="extraTextFontSize" type="I"></field>
+	</table>
+</schema>

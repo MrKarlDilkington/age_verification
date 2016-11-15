@@ -1,0 +1,143 @@
+.ccm-block-age_verification .verify-overlay
+{
+    position: fixed;
+    z-index: 99999 !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ccm-block-age_verification .verify-centering
+{
+    position: relative;
+    z-index: 999999 !important;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+.ccm-block-age_verification .verify-logo-container
+{
+    margin-right: auto;
+    margin-left: auto;
+}
+.ccm-block-age_verification .verify-logo
+{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.ccm-block-age_verification .verify-request-text
+{
+    margin-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.ccm-block-age_verification .verify-validate-text
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.ccm-block-age_verification .verify-extra-text,
+.ccm-block-age_verification .verify-extra-text h1,
+.ccm-block-age_verification .verify-extra-text h2,
+.ccm-block-age_verification .verify-extra-text h2,
+.ccm-block-age_verification .verify-extra-text h4,
+.ccm-block-age_verification .verify-extra-text h5,
+.ccm-block-age_verification .verify-extra-text h6,
+.ccm-block-age_verification .verify-extra-text p,
+.ccm-block-age_verification .verify-extra-text span
+{
+    line-height: 1.3 !important;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    word-wrap: break-word;
+}
+.ccm-block-age_verification .verify-extra-text a:link
+{
+    text-decoration: none;
+}
+.ccm-block-age_verification .verify-extra-text a:hover
+{
+    text-decoration: none;
+}
+.ccm-block-age_verification .verify-input-container
+{
+    width: 282px;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    margin-left: auto;
+}
+.ccm-block-age_verification .verify-input-date-container
+{
+    width: 282px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ccm-block-age_verification .verify-input-submit-container
+{
+    width: 282px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.ccm-block-age_verification .verify-input-date-container input
+{
+    outline: none;
+}
+.ccm-block-age_verification .verify-input-month,
+.ccm-block-age_verification .verify-input-day,
+.ccm-block-age_verification .verify-input-year
+{
+    font-family: inherit;
+    line-height: 40px;
+    float: left;
+    box-sizing: content-box;
+    width: 92px;
+    height: 40px;
+    margin: 0 2px 0 0;
+    padding: 0;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    border: none;
+    background: white;
+}
+.ccm-block-age_verification .verify-input-month
+{
+    border-radius: 0px;
+    border-top-left-radius: 3px !important;
+    border-bottom-left-radius: 3px !important;
+}
+.ccm-block-age_verification .verify-input-day
+{
+    border-radius: 0px;
+}
+.ccm-block-age_verification .verify-input-year
+{
+    border-radius: 0px;
+    border-top-right-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+}
+.ccm-block-age_verification .verify-input-submit
+{
+    font-family: inherit;
+    line-height: 23px;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
+}
+.ccm-block-age_verification .verify-checkbox-label
+{
+    display: block;
+    text-align: center;
+}
+.ccm-block-age_verification .verify-checkbox
+{
+    margin-right: 7px !important;
+}
