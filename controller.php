@@ -1,8 +1,8 @@
 <?php
 namespace Concrete\Package\AgeVerification;
 
-use Package;
 use BlockType;
+use Package;
 
 /*
 Age Verification by Karl Dilkington (aka MrKDilkington)
@@ -12,27 +12,27 @@ Please find the add-on there for the latest license copy.
 
 class Controller extends Package
 {
+    protected $pkgHandle = 'age_verification';
+    protected $appVersionRequired = '8.5.2';
+    protected $pkgVersion = '0.9.7';
 
-	protected $pkgHandle = 'age_verification';
-	protected $appVersionRequired = '5.7.3.1';
-	protected $pkgVersion = '0.9.6';
+    public function getPackageName()
+    {
+        return t('Age Verification');
+    }
 
-	public function getPackageName()
-	{
-		return t('Age Verification');
-	}
+    public function getPackageDescription()
+    {
+        return t('Add an age verification on your pages.');
+    }
 
-	public function getPackageDescription()
-	{
-		return t('Add an age verification on your pages.');
-	}
+    public function install()
+    {
+        $packageInstall = parent::install();
 
-	public function install()
-	{
-	    $pkg = parent::install();
-		$blk = BlockType::getByHandle('age_verification');
-		if(!is_object($blk) ) {
-			BlockType::installBlockTypeFromPackage('age_verification', $pkg);
-		}
+        $blockType = BlockType::getByHandle('age_verification');
+        if (!is_object($blockType)) {
+            BlockType::installBlockTypeFromPackage('age_verification', $packageInstall);
+        }
     }
 }

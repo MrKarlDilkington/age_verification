@@ -1,36 +1,40 @@
-<?xml version="1.0"?>
-<schema version="0.3">
-	<table name="btAgeVerification">
-		<field name="bID" type="I">
-			<key />
-			<unsigned />
-		</field>
-        <field name="fID" type="I">
-            <unsigned />
-            <default value="0" />
-        </field>
-        <field name="content" type="X2"></field>
-        <field name="minimumAge" type="I"></field>
-        <field name="cookieExpiration" type="I"></field>
-        <field name="formImageWidth" type="I"></field>
-        <field name="extraTextWidth" type="I"></field>
-        <field name="ageRedirectPage" type="X"></field>
-        <field name="overlayBackgroundColor" type="C"></field>
-        <field name="formTextColor" type="C"></field>
-        <field name="validateTextColor" type="C"></field>
-        <field name="extraTextLinkColor" type="C"></field>
-        <field name="extraTextHoverColor" type="C"></field>
-        <field name="submitBorderColor" type="C"></field>
-        <field name="submitBackgroundColor" type="C"></field>
-        <field name="submitTextColor" type="C"></field>
-        <field name="submitTextHoverColor" type="C"></field>
-        <field name="submitBackgroundHoverColor" type="C"></field>
-        <field name="submitBackgroundActiveColor" type="C"></field>
-        <field name="requestTextFontSize" type="I"></field>
-        <field name="validateTextFontSize" type="I"></field>
-        <field name="inputTextFontSize" type="I"></field>
-        <field name="submitTextFontSize" type="I"></field>
-        <field name="labelTextFontSize" type="I"></field>
-        <field name="extraTextFontSize" type="I"></field>
-	</table>
+<?xml version="1.0" encoding="UTF-8"?>
+<schema
+    xmlns="http://www.concrete5.org/doctrine-xml/0.5"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.concrete5.org/doctrine-xml/0.5 http://concrete5.github.io/doctrine-xml/doctrine-xml-0.5.xsd"
+>
+  <table name="btAgeVerification">
+    <field name="bID" type="integer">
+        <unsigned/>
+        <key/>
+    </field>
+    <field name="fID" type="integer">
+        <unsigned/>
+        <default value="0"/>
+    </field>
+    <field name="content" type="text"/>
+    <field name="minimumAge" type="integer"/>
+    <field name="cookieExpiration" type="integer"/>
+    <field name="formImageWidth" type="integer"/>
+    <field name="extraTextWidth" type="integer"/>
+    <field name="ageRedirectPage" type="text" size="65535"/>
+    <field name="overlayBackgroundColor" type="string" size="255"/>
+    <field name="formTextColor" type="string" size="255"/>
+    <field name="validateTextColor" type="string" size="255"/>
+    <field name="extraTextLinkColor" type="string" size="255"/>
+    <field name="extraTextHoverColor" type="string" size="255"/>
+    <field name="submitBorderColor" type="string" size="255"/>
+    <field name="submitBackgroundColor" type="string" size="255"/>
+    <field name="submitTextColor" type="string" size="255"/>
+    <field name="submitTextHoverColor" type="string" size="255"/>
+    <field name="submitBackgroundHoverColor" type="string" size="255"/>
+    <field name="submitBackgroundActiveColor" type="string" size="255"/>
+    <field name="requestTextFontSize" type="integer"/>
+    <field name="validateTextFontSize" type="integer"/>
+    <field name="inputTextFontSize" type="integer"/>
+    <field name="submitTextFontSize" type="integer"/>
+    <field name="labelTextFontSize" type="integer"/>
+    <field name="extraTextFontSize" type="integer"/>
+  </table>
 </schema>
